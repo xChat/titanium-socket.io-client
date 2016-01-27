@@ -1,6 +1,17 @@
+Socket IO client 1.45, tested with server 1.4.5 too.
+
+Use:
+
+Rename socket.io_working_reformatted.js to socket.io.js and replace in
+the socket io client you downloaded
+
+
+Will do a not re-formatted version soon.
+
+
 Disabled compression:
 
 Line: 2076 of the re-formatted version
-// disable this to get around of a global.Buffer undefined error
-   if (false && self.perMessageDeflate) {
+```// disable this to get around of a global.Buffer undefined error```
+```   if (false && self.perMessageDeflate) {```
 
