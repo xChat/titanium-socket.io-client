@@ -1965,7 +1965,6 @@
    */
 
    WS.prototype.doOpen = function(){
-   // TODO: Figure out and fix. This causes initial connection to time out on iOS.
    if (!this.check()) {
    // let probe timeout
    return;
@@ -2180,6 +2179,9 @@
    */
 
    WS.prototype.check = function(){
+   if(OS_IOS)
+   return !!WebSocket && (this.name === WS.prototype.name);
+   else
    return !!WebSocket && !('__initialize' in WebSocket && this.name === WS.prototype.name);
    };
 
@@ -4175,7 +4177,7 @@
    define(function() {
    return utf8;
    });
-   }	else if (freeExports && !freeExports.nodeType) {
+   }  else if (freeExports && !freeExports.nodeType) {
    if (freeModule) { // in Node.js or RingoJS v0.8.0+
    freeModule.exports = utf8;
    } else { // in Narwhal or RingoJS v0.7.0-
