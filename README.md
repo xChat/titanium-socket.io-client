@@ -13,7 +13,7 @@ Disabled compression:
 
 Line: 2076 of the re-formatted version
 ```
-// disable this to get around of a global.Buffer undefined error
+// disabled below check with 'false &&' to get around of a global.Buffer undefined error
    if (false && self.perMessageDeflate) {
 ```
 
