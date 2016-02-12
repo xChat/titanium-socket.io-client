@@ -22,4 +22,6 @@ Have to use the websocket protocol, in conjunction with tiws or a similar websoc
 eg.
 io('https://server.ip:1234', { transports: ['websocket'] });
 
+
+
 Will do a non re-formatted version, so it is easier to compare the differences.
