@@ -17,3 +17,8 @@ Line: 2076 of the re-formatted version
    if (false && self.perMessageDeflate) {
 ```
 
+Have to use the websocket protocol, in conjunction with tiws or a similar websocket module:
+
+eg.
+io('https://server.ip:1234', { transports: ['websocket'] });
+
