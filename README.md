@@ -2,16 +2,16 @@
 
 Tested with server v1.4.5 too.
 
-## Use:
+## Use
 
 Rename socket.io_working_reformatted.js to socket.io.js and replace the socket.io.js file in
-the socket io client folder you downloaded and included in your project.
+the socket io client folder that you've already downloaded and included into your project.
 
 
-Will do a not re-formatted version soon.
+Will do a non re-formatted version, so it is easier to compare the differences.
 
 
-## Disabled compression
+## Disabled Compression
 
 Line: 2076 of the re-formatted version
 ```
@@ -19,7 +19,7 @@ Line: 2076 of the re-formatted version
    if (false && self.perMessageDeflate) {
 ```
 
-## websocket protocol only
+## websocket Protocol Only
 
 Have to use the websocket protocol, in conjunction with tiws or a similar websocket module:
 
