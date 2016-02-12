@@ -1,21 +1,25 @@
-Socket IO client 1.45, tested with server 1.4.5 too.
+# Socket IO client v1.45
 
-Use:
+Tested with server v1.4.5 too.
 
-Rename socket.io_working_reformatted.js to socket.io.js and replace in
-the socket io client you downloaded
+## Use:
+
+Rename socket.io_working_reformatted.js to socket.io.js and replace the socket.io.js file in
+the socket io client folder you downloaded and included in your project.
 
 
 Will do a not re-formatted version soon.
 
 
-Disabled compression:
+## Disabled compression
 
 Line: 2076 of the re-formatted version
 ```
 // disabled below check with 'false &&' to get around of a global.Buffer undefined error
    if (false && self.perMessageDeflate) {
 ```
+
+## websocket protocol only
 
 Have to use the websocket protocol, in conjunction with tiws or a similar websocket module:
 
