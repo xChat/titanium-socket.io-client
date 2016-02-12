@@ -1,15 +1,11 @@
 # Socket IO client v1.45
 
-Tested with server v1.4.5 too.
+Working with nodejs socket.io server v1.4.5.
 
 ## Use
 
 Rename socket.io_working_reformatted.js to socket.io.js and replace the socket.io.js file in
 the socket io client folder that you've already downloaded and included into your project.
-
-
-Will do a non re-formatted version, so it is easier to compare the differences.
-
 
 ## Disabled Compression
 
@@ -26,3 +22,4 @@ Have to use the websocket protocol, in conjunction with tiws or a similar websoc
 eg.
 io('https://server.ip:1234', { transports: ['websocket'] });
 
+Will do a non re-formatted version, so it is easier to compare the differences.
